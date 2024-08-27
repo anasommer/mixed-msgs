@@ -30,11 +30,15 @@ const createMsg = () => {
 
   const chance = () => {
     const chanceMsg = [
-      'slight chance',
-      'good chance',
-      'pretty sure',
-      '80% chance',
+      'a slight chance',
+      'a good chance',
+      'a 100% chance',
+      'a 80% chance',
     ];
     return chanceMsg[randomNumber(chanceMsg.length)];
   };
+
+  return `There is  ${chance()} that you will ${outcome()} ${time()}`;
 };
+
+console.log(createMsg());
