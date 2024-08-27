@@ -35,6 +35,6 @@ const createMsg = () => {
       'pretty sure',
       '80% chance',
     ];
+    return chanceMsg[randomNumber(chanceMsg.length)];
   };
-  return chanceMsg[randomNumber(chanceMsg.length)];
 };
